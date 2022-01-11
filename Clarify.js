@@ -12,7 +12,18 @@
 
 (function() {
     'use strict';
-    setTimeout(function(){
-        document.getElementById('clarify-box').remove();
-    }, 1000);
+    var deleteInterval = setInterval(deleteClarify, 500);
+    var clarifyBox;
+    var maxInterval = 0;
+    function deleteClarify() {
+        clarifyBox = document.getElementById('clarify-box');
+        maxInterval ++;
+        if (clarifyBox != null) {
+            clarifyBox.remove();
+            clearInterval(deleteInterval);
+        }
+        if (maxInterval == 40) {
+            clearInterval(deleteInterval);
+        }
+    }
 })();
