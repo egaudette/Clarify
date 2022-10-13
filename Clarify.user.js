@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Remove YouTube 'Clarify'
-// @namespace    http://tampermonkey.net/
+// @namespace    http://www.ethangaudette.com/clarify
 // @version      0.1
 // @description  Don't leg Big Tech bias you. This script removes their Clarify Box.
 // @author       egaudette
